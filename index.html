@@ -227,11 +227,23 @@
         </div>
         <div class="secret-section">
             <p>Ready to uncover some secrets?</p>
-            <a href="https://sites.google.com/view/testing-portal456/home_1/portal" class="secret-button">Unlock the Secret Portal</a>
+            <button class="secret-button" onclick="redirectToSecretPortal()">Unlock the Secret Portal</button>
         </div>
     </main>
     <footer>
         <p>&copy; 2024 Christian Ezekiel L. Carvajal. All rights reserved.</p>
     </footer>
+
+    <script type="text/javascript">
+        function redirectToSecretPortal() {
+            // Display a message before redirect
+            alert("Redirecting you to the secret portal...");
+            
+            // Wait 2 seconds, then redirect to the secret portal
+            setTimeout(function() {
+                window.location.href = "https://sites.google.com/view/testing-portal456/home_1/portal";
+            }, 2000);  // 2000 milliseconds = 2 seconds
+        }
+    </script>
 </body>
 </html>
